@@ -1,6 +1,6 @@
 body{
   background-color: black;
-  background-image: url(/img/phon.jpg);
+  background-image: url(../img/phon.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
