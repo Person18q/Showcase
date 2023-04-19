@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100&family=Merriweather:wght@300&family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style/main.css">
+  <link rel="stylesheet" href="style/basket.css">
+  <link rel="stylesheet" href="style/showcase.css">
+  <title>Магазин роллов</title>
+</head>
+<body>
+  <header class="header">
+    <img class="img" src="img/logo.avif" alt="Роллы">
+    <h1 class="header__text">Доставка роллов</h1>
+    <p class="header__text__mini">Оперативно и вкусно</p>
+  </header>
+  <section class="showcase">
+    <div class="basket">
+      <h3 class="basket__header">Ваши заказы</h3>
+    </div>
+    <div class="products">
+      <div class="product" data-id="01">
+        <img class="product__img" src="img/kalifornia.jpg" alt="Роллы">
+        <p class="product__text">Калифорния роллы</p>
+        <p data-items-in-box>6 шт.</p>
+        <div class="product__price">
+          <div class="product__button">
+            <button class="button" data-action="delete">-</button>
+            <span data-quantity>1</span>
+            <button class="button" data-action="add">+</button>
+          </div>
+          <div class="block__price">
+            <span class="price__weight">200г.</span>
+            <span class="price">350 ₽</span>
+          </div>
+        </div>
+        <button class="addProduct" data-basket>+ в корзину</button>
+      </div>
+      <div class="product" data-id="02">
+        <img class="product__img" src="img/florida.jpg" alt="Роллы">
+        <p class="product__text">Ролл Флорида</p>
+        <p data-items-in-box>6 шт.</p>
+        <div class="product__price">
+          <div class="product__button">
+            <button class="button" data-action="delete">-</button>
+            <span data-quantity>1</span>
+            <button class="button" data-action="add">+</button>
+          </div>
+          <div class="block__price">
+            <span class="price__weight">100г.</span>
+            <span class="price">250 ₽</span>
+          </div>
+        </div>
+        <button class="addProduct" data-basket>+ в корзину</button>
+      </div>
+      <div class="product" data-id="03">
+        <img class="product__img" src="img/krab.jpg" alt="Роллы">
+        <p class="product__text">Филадельфия с крабом</p>
+        <p data-items-in-box>6 шт.</p>
+        <div class="product__price">
+          <div class="product__button">
+            <button class="button" data-action="delete">-</button>
+            <span data-quantity>1</span>
+            <button class="button" data-action="add">+</button>
+          </div>
+          <div class="block__price">
+            <span class="price__weight">100г.</span>
+            <span class="price">300 ₽</span>
+          </div>
+        </div>
+        <button class="addProduct" data-basket>+ в корзину</button>
+      </div>
+      <div class="product" data-id="04">
+        <img class="product__img" src="img/ugar.jpg" alt="Роллы">
+        <p class="product__text">Роллы Филадельфия с угрем</p>
+        <p data-items-in-box>6 шт.</p>
+        <div class="product__price">
+          <div class="product__button">
+            <button class="button" data-action="delete">-</button>
+            <span data-quantity>1</span>
+            <button class="button" data-action="add">+</button>
+          </div>
+          <div class="block__price">
+            <span class="price__weight">250г.</span>
+            <span class="price">400 ₽</span>
+          </div>
+        </div>
+        <button class="addProduct" data-basket>+ в корзину</button>
+      </div>
+    </div>
+  </section>
+  <script src="script/showcase.js"></script>
+  <script src="script/basket.js"></script>
+</body>
+</html>
