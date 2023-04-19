@@ -9,11 +9,14 @@ window.addEventListener('click', e => {
       counter.textContent = ++counter.textContent
     }
   }
-  if(e.target.dataset.action === 'delete'){
+  else if(e.target.dataset.action === 'delete'){
       const product__button = e.target.closest('.product__button')
       const counter = product__button.querySelector('[data-quantity]')
-      if(+counter.textContent > 1){
+    if(+counter.textContent > 1){
       counter.textContent = --counter.textContent
+    }
+    else if(e.target.closest('.basket') && +counter.textContent === 1){
+      e.target.closest('.order').remove()
     }
   }
 })
