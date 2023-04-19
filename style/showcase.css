@@ -97,9 +97,9 @@
   color:black;
 }
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 500px) {
   .header{
-    width: 450px;
+    width: 500px;
   }
 
   .header__text{
@@ -107,7 +107,7 @@
   }
 
   .showcase{
-    width: 450px;
+    width: 500px;
     align-items: center;
     flex-direction: column;
   }
