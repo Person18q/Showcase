@@ -3,8 +3,9 @@
   width: 350px;
   height: 100%;
   margin-bottom: 10px;
-  background-color: rgb(255, 236, 213);
+  background-color: rgba(138, 112, 83, 0.9);
   border-radius: 10px;
+  color: azure;
 }
 
 .basket__header{
@@ -23,8 +24,8 @@
 .order::before{
   content: '';
   position: absolute;
-  background-color: brown;
-  width: 95%;
+  background-color: black;
+  width: 94%;
   height: 1px;
   top: 0px;
 }

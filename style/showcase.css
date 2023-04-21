@@ -18,7 +18,7 @@
 }
 
 .product{
-  background-color: rgb(255, 236, 213);
+  background-color: rgba(138, 112, 83, 0.9);
   width: 350px;
   height: 500px;
   display: flex;
@@ -26,6 +26,7 @@
   align-items: center;
   border-radius: 10px;
   overflow: hidden;
+  color: azure;
 }
 
 .product__img{
@@ -54,6 +55,7 @@
   overflow: hidden;
   width: 120px;
   background-color: rgb(255, 225, 182);
+  color: black;
 }
 
 .button{
@@ -66,7 +68,8 @@
 }
 
 .button:hover{
-  background-color: rgb(255, 199, 125);
+  background-color: black;
+  color: azure;
 }
 
 .block__price{
@@ -93,8 +96,9 @@
 }
 
 .addProduct:hover{
-  background-color: rgb(255, 199, 125);
-  color:black;
+  background-color: black;
+  color: azure;
+  border: none;
 }
 
 @media screen and (max-width: 500px) {
