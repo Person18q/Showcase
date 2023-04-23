@@ -19,8 +19,25 @@
     <p class="header__text__mini">Оперативно и вкусно</p>
   </header>
   <section class="showcase">
-    <div class="basket">
+    <div class="basket__wrapper">
       <h3 class="basket__header">Ваши заказы</h3>
+      <p data-basket-empty class="alert-secondary" role="alert">
+          Корзина пуста
+      </p>
+      <div class="basket">
+
+      </div>
+      <div id="order-form" class="product-body hidden">
+        <p class="h5">Доставка: <span class="free">Бесплатно</span></p>
+        <p class="h5">Итого: <span class="total-price">0 </span>₽</p>
+        <p class="product-title h5">Оформить заказ</p>
+        <form class="form-group">
+          <div>
+            <input type="text" class="form-control" placeholder="Ваш номер телефона">
+          </div>
+          <button type="submit" class="btn">Заказать</button>
+        </form>
+      </div>
     </div>
     <div class="products">
       <div class="product" data-id="01">
@@ -93,6 +110,8 @@
       </div>
     </div>
   </section>
+  <script src="script/basketPrice.js"></script>
+  <script src="script/toggleBasket.js"></script>
   <script src="script/showcase.js"></script>
   <script src="script/basket.js"></script>
 </body>

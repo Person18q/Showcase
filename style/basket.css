@@ -1,16 +1,86 @@
-.basket{
+.basket__wrapper{
   margin: 0;
   width: 350px;
   height: 100%;
   margin-bottom: 10px;
-  background-color: rgba(138, 112, 83, 0.9);
+  background-color: rgba(138, 112, 83, 0.7);
   border-radius: 10px;
   color: azure;
 }
 
 .basket__header{
-  padding: 5px;
   margin: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+.alert-secondary{
+  display:inline-block;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 10px;
+  background-color: azure;
+  color: black;
+  font-size: 18px;
+  border-radius: 20px;
+  padding: 4px;
+  font-weight: 600;
+}
+
+.h5{
+  position: relative;
+  margin-left: 10px;
+  padding-top: 3px;
+  font-size: 20px;
+}
+
+.h5::before{
+  content: '';
+  position: absolute;
+  background-color: black;
+  width: 97%;
+  height: 1px;
+  top: 0px;
+}
+
+.green{
+  color: greenyellow;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.form-control{
+  font-size: 20px;
+  border-radius: 20px;
+  padding: 6px;
+  border: none;
+}
+
+.btn{
+  border: none;
+  border-radius: 25px;
+  width: 200px;
+  height: 50px;
+  font-size: 25px;
+  font-weight: 400;
+  background-color: rgb(94, 64, 26);
+  color: azure;
+  cursor: pointer;
+  transition: .3s;
+}
+
+.btn:hover{
+  background-color: black;
+}
+
+.basket{
+  padding-top: 10px;
+  padding-bottom: 10px; 
 }
 
 .order{
@@ -57,4 +127,8 @@
 .basket__price{
   font-size: 20px;
   margin: 0;
+}
+
+.hidden{
+  display: none;
 }

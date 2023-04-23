@@ -1,4 +1,4 @@
-const basketWrapper = document.querySelector('.basket')
+const basket = document.querySelector('.basket')
 
 window.addEventListener('click', e => {
   if(e.target.hasAttribute('data-basket')){
@@ -15,14 +15,12 @@ window.addEventListener('click', e => {
       quantity: product.querySelector('[data-quantity]').innerText
     }
     
-    const itemInBasket = basketWrapper.querySelector(`[data-id="${productInfo.id}"]`)
+    const itemInBasket = basket.querySelector(`[data-id="${productInfo.id}"]`)
 
     if(itemInBasket){
       const counter = itemInBasket.querySelector('[data-quantity]')
-      const money = itemInBasket.querySelector('.basket__price')
       if(parseInt(counter.innerText) + parseInt(productInfo.quantity) <= 10){
         counter.innerText = parseInt(counter.innerText) + parseInt(productInfo.quantity)
-        money.innerText = parseInt(productInfo.price) * parseInt(counter.innerText)
       }
     }else{
       const map = 
@@ -44,7 +42,14 @@ window.addEventListener('click', e => {
         </div>
       </div>`
 
-      basketWrapper.insertAdjacentHTML('beforeend', map)
+      basket.insertAdjacentHTML('beforeend', map)
     }
+
+    product.querySelector('[data-quantity]').innerText = '1'
+
+    toggleBasket()
+
+    basketPrice()
   }
+
 })    

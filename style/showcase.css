@@ -18,7 +18,7 @@
 }
 
 .product{
-  background-color: rgba(138, 112, 83, 0.9);
+  background-color: rgba(138, 112, 83, 0.7);
   width: 350px;
   height: 500px;
   display: flex;
@@ -54,17 +54,18 @@
   border-radius: 13px 13px 13px 13px;
   overflow: hidden;
   width: 120px;
-  background-color: rgb(255, 225, 182);
-  color: black;
+  background-color:  rgb(94, 64, 26);
+  color:azure;
 }
 
 .button{
   border: none;
   width: 40px;
   height: 30px;
-  background-color: rgb(255, 225, 182);
+  background-color:  rgb(94, 64, 26);
   cursor: pointer;
   transition: .3s;
+  color:azure;
 }
 
 .button:hover{

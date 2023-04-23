@@ -15,8 +15,13 @@ window.addEventListener('click', e => {
     if(+counter.textContent > 1){
       counter.textContent = --counter.textContent
     }
-    else if(e.target.closest('.basket') && +counter.textContent === 1){
+    else if(e.target.closest('.basket__wrapper') && +counter.textContent === 1){
       e.target.closest('.order').remove()
+      toggleBasket()
+      basketPrice()
     }
+  }
+  if(e.target.hasAttribute('data-action') && e.target.closest('.basket__wrapper')){
+    basketPrice()
   }
 })
