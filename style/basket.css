@@ -3,6 +3,7 @@
   width: 350px;
   height: 100%;
   margin-bottom: 10px;
+  padding-bottom: 15px;
   background-color: rgba(138, 112, 83, 0.7);
   border-radius: 10px;
   color: azure;
@@ -10,7 +11,7 @@
 
 .basket__header{
   margin: 0;
-  margin-top: 10px;
+  margin-top: 15px;
   margin-left: 10px;
 }
 
@@ -78,16 +79,12 @@
   background-color: black;
 }
 
-.basket{
-  padding-top: 10px;
-  padding-bottom: 10px; 
-}
-
 .order{
   display: flex;
   align-items: center;
   gap: 15px;
   padding: 10px;
+  margin-top: 15px;
   position: relative;
 }
 

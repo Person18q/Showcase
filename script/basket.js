@@ -1,8 +1,9 @@
 const basket = document.querySelector('.basket')
+const cart = document.querySelector('.basket')
 
 window.addEventListener('click', e => {
   if(e.target.hasAttribute('data-basket')){
-    
+
     const product = e.target.closest('.product')
 
     const productInfo = {
@@ -44,7 +45,6 @@ window.addEventListener('click', e => {
 
       basket.insertAdjacentHTML('beforeend', map)
     }
-
     product.querySelector('[data-quantity]').innerText = '1'
 
     toggleBasket()
